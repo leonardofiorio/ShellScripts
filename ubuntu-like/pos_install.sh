@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Update package list and the system
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt dist-upgrade -y
 
 ## Install package by APT
 # Git client
@@ -17,11 +17,13 @@ sudo apt upgrade
 # Libreoffice: suite office
 # VLC: player
 # OBS Studio: software for video recording and live streaming
+# Audacity: edit audios
 sudo apt -y install curl git unrar vim guvcview transmission htop gnome-tweak-tool lm-sensors gimp gparted libreoffice vlc obs-studio
 
 # Download and install Google Chrome by deb package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 # Removing Google Chrome deb file
 rm -rf google-chrome-stable_current_amd64.deb
 
@@ -30,6 +32,9 @@ sudo snap install skype --classic
 
 # Install Sublime Text by snap
 sudo snap install sublime-text --classic
+
+# Cleaning the system
+sudo apt autoclean -y && sudo apt autoremove -y
 
 # Reboot the computer
 sudo reboot 
