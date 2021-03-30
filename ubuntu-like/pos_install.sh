@@ -36,5 +36,3 @@ sudo snap install sublime-text --classic
 # Cleaning the system
 sudo apt autoclean -y && sudo apt autoremove -y
 
-# Reboot the computer
-sudo reboot 
