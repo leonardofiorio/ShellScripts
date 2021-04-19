@@ -39,6 +39,7 @@ packs=(
    vlc
    obs-studio
    audacity
+   net-tools
 )
 
 # Loop to install packages
