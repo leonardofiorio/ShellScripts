@@ -33,6 +33,7 @@ packs=(
    htop
    gnome-tweak-tool
    lm-sensors
+   xsensors
    gimp
    gparted
    libreoffice
